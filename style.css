@@ -161,3 +161,29 @@ nav ul ul li a:hover{
         display: block;
     }
 }
+@media all and (max-width: 375px) {
+    .icon-bar{
+        display: block;
+        color: #E5E4B8;
+        position: absolute;
+        right: 25px;
+        line-height: 70px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    nav .logo{
+        float: left;
+        color: #E5E4B8;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 70px;
+        padding-left: 60px;
+    }
+    nav .logo img{
+        position: relative;
+        margin-top: 2px;
+        margin-right:3px; 
+        float: left;
+        width: 60px;
+ } 
+}
