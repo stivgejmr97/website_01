@@ -95,7 +95,10 @@ nav ul ul li a:hover{
     nav ul{ 
         margin-right: 0px;
         float: left;
-
+        
+    }
+    nav ul li a {
+       padding: 20px;
     }
     nav .logo{
         padding-left: 30px;
@@ -104,6 +107,7 @@ nav ul ul li a:hover{
     nav ul li, nav ul ul li {
         display: block;
         width: 100%;
+       
     }
     nav ul li {
         border-bottom: 0px;
