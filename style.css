@@ -161,7 +161,7 @@ nav ul ul li a:hover{
         display: block;
     }
 }
-@media all and (max-width: 375px) {
+@media only screen and (max-width: 450px) {
     .icon-bar{
         display: block;
         color: #E5E4B8;
@@ -177,13 +177,13 @@ nav ul ul li a:hover{
         font-size: 20px;
         font-weight: 600;
         line-height: 70px;
-        padding-left: 60px;
+        padding-left: 15px;
     }
     nav .logo img{
         position: relative;
-        margin-top: 2px;
+        margin-top: 5px;
         margin-right:3px; 
         float: left;
-        width: 60px;
+        width: 65px;
  } 
 }
