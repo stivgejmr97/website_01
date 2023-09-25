@@ -207,17 +207,19 @@ header{
     top: -50px;
     width: 1580px;
     z-index: -2;
-    right: 50;
+    right: 0;
     align-items: center;
+    
     
 }
 .h-ram{
+    float: inline-start;
     position: absolute;
     width: 1580px;
     top: -50px;
     z-index: -1;
-    right: 50;
-    align-items: center;
+    right: 0;
+    
 }
 .big-title{
     position: absolute;
@@ -297,6 +299,9 @@ section .container{
 @media (max-width:850px) {
     section .container {
         grid-template-columns: 1fr;
+    }
+    .h-bg , .h-ram{
+        right: -450px;
     }
 }
 @media (max-width:600px) {
