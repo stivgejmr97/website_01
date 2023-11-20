@@ -6,7 +6,9 @@
 }
 
 body{
-    background:#f2f2f2;
+    background: #2d320c;
+    max-width: 1580px!important ;
+    margin: auto;
    
 }
 /*menu with logo*/
@@ -40,6 +42,7 @@ nav ul{
     list-style: none;
     margin-right: 5rem;
     position: relative;
+    z-index: 100;
 
 }
 nav ul li{ 
@@ -166,6 +169,9 @@ nav ul ul li a:hover{
     [id^=btn]:checked + ul {
         display: block;
     }
+    .footer ul {
+        display: block;
+    }
 }
 @media only screen and (max-width: 450px) {
     .icon-bar{
@@ -280,6 +286,7 @@ section .container{
 }
 .text{
     font-size: 1.2rem;
+    margin-bottom: 8%;
 }
 .border {
     position: absolute;
@@ -295,6 +302,42 @@ section .container{
 .opacity{
     opacity: 0;
 }
+.btn-more  {
+   text-decoration: none;
+    padding: 1rem;
+    font-weight: 600;
+    box-shadow: 0px 20px 20px 10px rgba(0,0,0,0.24);
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #E5E4B8;
+    color: #373E0F;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+   
+}
+.btn-more::after {
+    content: "\279C"; /* šipka */
+    font-size: 1.8rem;
+    opacity: 0;
+    align-items: center;
+    transition: all 0.3s ease;
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+  }
+.btn-more:hover {
+    padding-right: 40px; /* zvětší místo pro šipku */
+  }
+  
+.btn-more:hover::after {
+    opacity: 1;
+    right: 10px; /* výsuv šipky */
+  }
 
 @media (max-width:850px) {
     section .container {
@@ -313,5 +356,86 @@ section .container{
     }
     .title{
         font-size: 1.5rem;
+    }
+}
+
+
+.footer{
+    background-color: #E5E4B8;
+    padding: 70px 0 ;
+}
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+ul{
+    list-style: none;
+    
+}
+.footer-col{
+    width: 25%;
+    padding:0 15px ;
+   
+}
+.footer-col h4{
+    font-size: 1.2rem ;
+    color: #373E0F;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #99986B;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a {
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: #99986B;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #373E0F;
+    padding-left: 10px;
+}
+
+@media(max-width:767px) {
+    .footer-col{
+        width: 50%;
+        margin-bottom: 50px;
+    }
+    .footer{
+        padding-left: 15%;
+    }
+}
+
+@media(max-width:574px) {
+    .footer-col{
+        width: 100%
+        
+    }
+    .footer{
+        padding-left: 15%;
+    }
+}
+@media(max-width:1230px){
+    .footer{
+        padding-left: 10%;
     }
 }
