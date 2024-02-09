@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ouessant farma</title>
+    <link rel="icon" href="logo 3.png">
     <link rel="stylesheet" href="about_us.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -51,7 +52,7 @@
                 <a href="about_us.html">O nás</a>
                 <input type="checkbox" id="btn-1">
                     <ul>
-                        <li><a href="#">Naše farma </a></li>
+                        <li><a href="about_us.html">Naše farma </a></li>
                         <li><a href="#">Kontakt</a></li>
                     </ul>
             </li>
@@ -114,6 +115,45 @@
                
             </div>
         </section>
+        <section class="contact_us">
+            <div class="content">
+            <h3 class="title">Kontaktujte nás </h3>
+            </div>
+
+            <form action="#" >
+
+                <div class="input-box">
+                    <div class="input-field field">
+                        <input type="text" placeholder="Celé Jméno" id="name" class="item" autocomplete="off">
+                        <div class="error_txt">Chybí Celé Jméno</div>
+                    </div>
+                    <div class="input-field field">
+                        <input type="text" placeholder="E-mail" id="email" class="item" autocomplete="off">
+                        <div class="error_txt email">Chybí E-mail</div>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <div class="input-field field">
+                        <input type="text" placeholder="Telefoní číslo" id="phone" class="item" autocomplete="off">
+                        <div class="error_txt">Chybí Telefoní číslo</div>
+                    </div>
+
+                    <div class="input-field field">
+                        <input type="text" placeholder="Předmět" id="subject" class="item" autocomplete="off">
+                        <div class="error_txt">Chybí Předmět</div>
+                    </div>
+               </div>
+
+                <div class="textarea-filed field">
+                    <textarea name="" id="message" cols="30" rows="10"  placeholder="Vaše zpráva" class="item" autocomplete="off"></textarea>
+                    <div class="error_txt">Chybí Vaše zpráva</div>
+                </div>
+
+                <button type="submit">Odeslat</button> 
+            </form>
+        
+        </section>
     </main>
 
     <footer class="footer">
@@ -153,6 +193,8 @@
 
     </footer>
      <script src="app.js"></script>
-     
+     <script src="https://smtpjs.com/v3/smtp.js"></script>
+     <script src="contact-us.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

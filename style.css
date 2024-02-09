@@ -282,6 +282,7 @@ section .container{
 .content{
     color: #E5E4B8;
     transform: translateY(-50px);
+    
 }
 .title {
     font-weight: 800;
@@ -369,7 +370,6 @@ section .container{
 .footer{
     background-color: #E5E4B8;
     padding: 70px 0 ;
-    z-index: 100;
 }
 .container{
     max-width: 1170px;
@@ -434,8 +434,7 @@ ul{
 
 @media(max-width:574px) {
     .footer-col{
-        width: 100%
-        
+        width: 100%;
     }
     .footer{
         padding-left: 15%;

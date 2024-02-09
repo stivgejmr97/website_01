@@ -9,7 +9,6 @@ body{
     background: #2d320c;
     max-width: 1580px!important ;
     margin: auto;
-   
 }
 h1{
     color: #E5E4B8;
@@ -17,11 +16,13 @@ h1{
     padding-top: 10vh;
     text-align: center;
 }
+
+
 /*menu with logo*/
+
+
 nav{
     background: #373E0F;
-    
-    
 }
 nav:after{
     content: '';
@@ -106,7 +107,6 @@ nav ul ul li a:hover{
     nav ul{ 
         margin-right: 0px;
         float: left;
-        
     }
     nav ul li a {
        padding: 20px;
@@ -118,11 +118,9 @@ nav ul ul li a:hover{
     nav ul li, nav ul ul li {
         display: block;
         width: 100%;
-       
     }
     nav ul li {
         border-bottom: 0px;
-        
     }
     nav ul ul{
         top: 70px;
@@ -132,18 +130,14 @@ nav ul ul li a:hover{
         display: none;
         opacity: 1;
         visibility: visible;
-        
     }
     nav ul ul a{
         padding-left: 40px;
-
-
     }
     nav ul li a:hover, nav label:hover,nav ul ul li a:hover  {
         color:#FFFFE6;
-    
     }
-    
+
     .show{
         display: block;
         color: #E5E4B8;
@@ -166,7 +160,6 @@ nav ul ul li a:hover{
     }
     nav ul li a:hover{
         box-shadow: none;
-        
     }
     .show + a, ul{
         display: none;
@@ -208,11 +201,15 @@ nav ul ul li a:hover{
 
 
 /*content*/
+
+
 section {
     width: 100%;
     background-color: #2d320c;
     position: relative;
-    
+}
+section input{
+    display: block;
 }
 .shadow{
     position: absolute;
@@ -252,7 +249,6 @@ section .container > *{
     position: relative;
 }
 .text{
-    /*padding: 05rem;*/
     font-size: 1.2rem;
     margin-bottom: 8%;
     color: #E5E4B8;
@@ -265,11 +261,95 @@ section .container > *{
     bottom: 0;
     left: 0;
 }
+
+
+/*form contact us*/
+
+
+form{
+    margin: auto;
+    padding-bottom: 2%;
+}
+
+.contact_us .title{
+    color: #E5E4B8;
+    text-align: center;
+}
+.contact_us form{
+    width: 55%;
+    text-align: center;
+}
+form .input-box {
+    display: flex;
+    justify-content: space-between;
+}
+.input-box .input-field{
+    width: 48.5%;
+}
+
+.field .item{
+    width: 100%;
+    padding: 18px;
+    background: #373E0F;
+    border: 2px solid #373E0F;
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #E5E4B8;
+    margin: 12px 0;
+}
+.field.error .item{
+    border-color:rgb(223, 16, 16) ;
+}
+.field .item::placeholder{
+    color: rgba(255, 255, 255, .3);
+}
+form .textarea-filed .item{
+    resize: none;
+}
+form .textarea-filed .error_txt{
+    margin-top: -10px;
+}
+
+form button {
+    padding: 12px 32px;
+    background-color: #373E0F;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    box-shadow: 0 0 10px #373E0F;
+    color: #E5E4B8;
+    font-size: 16px;
+    cursor: pointer;
+    margin:3% 0% 3% 0%;
+    transition: .4s;
+}
+form button:hover{
+    box-shadow: none;
+    background-color: #E5E4B8;
+    color: #373E0F;
+}
+.field .error_txt{
+    font-size: 14.5px;
+    color: rgb(223, 16, 16);
+    text-align: left;
+    margin: -5px 0 10px;
+    display: none;
+}
+.field.error .error_txt{
+    display: block;
+}
+
+
+/*Mapa */
+
+
 .map-container {
     position: relative;
     overflow: hidden;
     width: 80%;
     padding-top: 75%; 
+    
   }
 .responsive-iframe {
     position: absolute;
@@ -280,15 +360,15 @@ section .container > *{
     width: 100%;
     height: 100%;
     border-radius: 8px;
-    
   }
-.img-container{
-    
 
-}
+
+
 .opacity{
     opacity: 0;
 }
+
+/* button with arrow*/
 .btn-more  {
    text-decoration: none;
     padding: 1rem;
@@ -326,6 +406,7 @@ section .container > *{
     right: 10px; /* výsuv šipky */
   }
 
+
 @media (max-width:850px) {
     section .container {
         grid-template-columns: 1fr;
@@ -333,6 +414,9 @@ section .container > *{
     .h-bg , .h-ram{
         right: -450px;
     }
+    .contact_us form{
+        width: 75%;
+    } 
 }
 @media (max-width:600px) {
     .big-title {
@@ -344,7 +428,17 @@ section .container > *{
     .title{
         font-size: 1.5rem;
     }
+    form .input-box {
+        flex-direction: column;
+    }
+    .input-box .input-field{
+        width: 100%;
+    }
+   
 }
+
+
+/*footer*/
 
 
 .footer{
